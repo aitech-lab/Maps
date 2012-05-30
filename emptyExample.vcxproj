@@ -14,7 +14,7 @@
     <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
     <RootNamespace>emptyExample</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <ProjectName>Instagram</ProjectName>
+    <ProjectName>Ailove-maps</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -117,21 +117,21 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Instagram.cpp" />
-    <ClCompile Include="src\InstagramImage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofxJSON\lib\src\lib_json\json_reader.cpp" />
     <ClCompile Include="src\ofxJSON\lib\src\lib_json\json_value.cpp" />
     <ClCompile Include="src\ofxJSON\lib\src\lib_json\json_writer.cpp" />
     <ClCompile Include="src\ofxJSON\src\ofxJSONElement.cpp" />
+    <ClCompile Include="src\OpenStreetMap.cpp" />
     <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\Wikimapia.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Instagram.h" />
-    <ClInclude Include="src\InstagramImage.h" />
     <ClInclude Include="src\ofxJSON\lib\src\lib_json\json_batchallocator.h" />
     <ClInclude Include="src\ofxJSON\src\ofxJSONElement.h" />
+    <ClInclude Include="src\OpenStreetMap.h" />
     <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\Wikimapia.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF7)\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">

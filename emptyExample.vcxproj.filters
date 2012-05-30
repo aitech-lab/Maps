@@ -15,8 +15,8 @@
     <ClCompile Include="src\ofxJSON\lib\src\lib_json\json_writer.cpp">
       <Filter>ofxJSON</Filter>
     </ClCompile>
-    <ClCompile Include="src\Instagram.cpp" />
-    <ClCompile Include="src\InstagramImage.cpp" />
+    <ClCompile Include="src\Wikimapia.cpp" />
+    <ClCompile Include="src\OpenStreetMap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -26,8 +26,8 @@
     <ClInclude Include="src\ofxJSON\lib\src\lib_json\json_batchallocator.h">
       <Filter>ofxJSON</Filter>
     </ClInclude>
-    <ClInclude Include="src\Instagram.h" />
-    <ClInclude Include="src\InstagramImage.h" />
+    <ClInclude Include="src\Wikimapia.h" />
+    <ClInclude Include="src\OpenStreetMap.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ofxJSON">

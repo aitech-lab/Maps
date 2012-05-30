@@ -4,26 +4,24 @@
 Wikimapia::Wikimapia(void) {
 
 	ofRegisterURLNotification(this);
+	vbo.setMode(OF_PRIMITIVE_POINTS);
+
 }
 
 
-Wikimapia::~Wikimapia(void)
-{
+Wikimapia::~Wikimapia(void) {
 }
 
 void Wikimapia::load(string url)  {
 	ofLoadURLAsync(url);
-
 }
 
-// When we receive an url response this method is called; 
-// The loaded image is removed from the async_queue and added to the
-// update queue. The update queue is used to update the texture.
-//--------------------------------------------------------------
 void Wikimapia::urlResponse(ofHttpResponse & response) {
+
 	if(response.status == 200) {
 
-		_json = ofxJSONElement(response.data);
+		_json = ofxJSONElement(string(response.data));
+		parseJson();
 
 //		lock();
 //		
@@ -43,5 +41,23 @@ void Wikimapia::urlResponse(ofHttpResponse & response) {
 		ofLog(OF_LOG_ERROR, ss.str());
 
 	}
+}
+
+void Wikimapia::draw() {
+	//ofEnablePointSprites();
+	vbo.drawVertices();
+}
+
+void Wikimapia::parseJson() {
+	
+	for(int i=0; i<_json["folder"].size(); i++) {
+		for(int j=0; j<_json["folder"][i]["polygon"].size(); j++) {
+			double x = (_json["folder"][i]["polygon"][j]["x"].asDouble()-37.606763)*20000.0;
+			double y =-(_json["folder"][i]["polygon"][j]["y"].asDouble()-55.727757)*36000.0;
+			vbo.addVertex(ofVec2f(x,y));
+			vbo.addColor(ofColor(255,255,255,255));
+			//cout << x << "\t" << y << "\n";
+		}
+	}	
 }
 

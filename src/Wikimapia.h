@@ -9,8 +9,12 @@ public:
 	~Wikimapia(void);
 
 	void load(string url);
-	void Wikimapia::urlResponse(ofHttpResponse & response);
-
+	void urlResponse(ofHttpResponse & response);
+	void draw();
+	void parseJson();
+	
+	unsigned int numPoints; 
+	ofVboMesh vbo;
 private:
 	ofxJSONElement _json;
 

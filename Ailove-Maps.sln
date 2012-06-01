@@ -6,6 +6,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openframeworksLib", "%OF7%\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiled-maps", "tiled-maps\tiled-maps.vcxproj", "{91149139-670C-4777-BCFF-D8A21D6599FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tile-loader", "tile-loader\tile-loader.vcxproj", "{4BB42DDC-2E49-4030-AC69-0E06B9D59C42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -24,6 +26,10 @@ Global
 		{91149139-670C-4777-BCFF-D8A21D6599FD}.Debug|Win32.Build.0 = Debug|Win32
 		{91149139-670C-4777-BCFF-D8A21D6599FD}.Release|Win32.ActiveCfg = Release|Win32
 		{91149139-670C-4777-BCFF-D8A21D6599FD}.Release|Win32.Build.0 = Release|Win32
+		{4BB42DDC-2E49-4030-AC69-0E06B9D59C42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4BB42DDC-2E49-4030-AC69-0E06B9D59C42}.Debug|Win32.Build.0 = Debug|Win32
+		{4BB42DDC-2E49-4030-AC69-0E06B9D59C42}.Release|Win32.ActiveCfg = Release|Win32
+		{4BB42DDC-2E49-4030-AC69-0E06B9D59C42}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

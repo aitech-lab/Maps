@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\httpImage\ofMemoryImage.cpp" />
+    <ClCompile Include="src\httpImage\SimpleWebScraper.cpp" />
+    <ClCompile Include="src\modestmaps\LinearProjection.cpp" />
+    <ClCompile Include="src\modestmaps\Map.cpp" />
+    <ClCompile Include="src\modestmaps\MercatorProjection.cpp" />
+    <ClCompile Include="src\modestmaps\TileLoader.cpp" />
+    <ClCompile Include="src\modestmaps\Transformation.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\httpImage\ofMemoryImage.h" />
+    <ClInclude Include="src\httpImage\SimpleWebScraper.h" />
+    <ClInclude Include="src\modestmaps\AbstractMapProvider.h" />
+    <ClInclude Include="src\modestmaps\AbstractProjection.h" />
+    <ClInclude Include="src\modestmaps\Coordinate.h" />
+    <ClInclude Include="src\modestmaps\LinearProjection.h" />
+    <ClInclude Include="src\modestmaps\Location.h" />
+    <ClInclude Include="src\modestmaps\Map.h" />
+    <ClInclude Include="src\modestmaps\MercatorProjection.h" />
+    <ClInclude Include="src\modestmaps\OpenStreetMapProvider.h" />
+    <ClInclude Include="src\modestmaps\Point2d.h" />
+    <ClInclude Include="src\modestmaps\QueueSorter.h" />
+    <ClInclude Include="src\modestmaps\TileLoader.h" />
+    <ClInclude Include="src\modestmaps\Transformation.h" />
+    <ClInclude Include="src\testApp.h" />
+  </ItemGroup>
+</Project>

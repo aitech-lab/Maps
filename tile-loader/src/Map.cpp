@@ -77,7 +77,7 @@ void Map::draw(int x, int y) {
 		for(int xx=0; xx<tileW; xx++) {
 			Tile& t = *tiles[tileId];
 			ofRect(x+xx*tileSize, y+yy*tileSize, tileSize, tileSize);
-			font.drawString(ofToString(xId)+":"+ofToString(yId)+"\n"+ofToString(t.x64)+":"+ofToString(t.y64), 
+			font.drawString(ofToString(t.x64)+":"+ofToString(t.y64), 
 				x+xx*tileSize+1, y+yy*tileSize+14);
 			tileId++;
 			xId++;

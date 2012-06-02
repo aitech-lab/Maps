@@ -32,6 +32,9 @@ void Tile::load(int x, int y, int z) {
 		return;
 	}
 	img.clear();
+	// 
+	//name = "v=112&src=app&x="+ofToString(x)+"&s=&y="+ofToString(y)+"&z="+ofToString(z)+"&s=Galileo";
+	//url="https://khms1.google.ru/kh/"+name+".png";
 	name = ofToString(z)+"/"+ofToString(x)+"/"+ofToString(y);
 	url="http://a.tiles.mapbox.com/v3/mapbox.mapbox-streets/"+name+".png";
 	

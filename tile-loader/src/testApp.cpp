@@ -26,7 +26,7 @@ void testApp::draw() {
 
 	//if (tile.img.isAllocated()) tile.img.draw(0,0);
 
-	map.draw(10, 10);
+	map.draw(0, 0);
 
 	// ofSetColor(255);
 	// font1.drawString("Abcdefg", 10, 20);

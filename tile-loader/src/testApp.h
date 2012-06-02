@@ -1,9 +1,9 @@
 #ifndef _TEST_APP
 #define _TEST_APP
 
-
 #include "ofMain.h"
-#include "Wikimapia.h"
+#include "Map.h"
+#include "Tile.h"
 
 
 class testApp : public ofBaseApp {
@@ -22,8 +22,13 @@ class testApp : public ofBaseApp {
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-		Wikimapia wikimapia;
+		Map map;
 		int x, y, z;
+
+		ofTrueTypeFont font1;
+		ofTrueTypeFont font2;
+
+		Tile tile;
 
 	
 };
